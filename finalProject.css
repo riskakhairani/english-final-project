@@ -1,0 +1,189 @@
+*{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading{
+    background-color: indigo;
+    padding: 3px;
+    display: flex;
+}
+
+img{
+    background-color: indigo;
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+}
+
+.picture{
+    background-color: indigo;
+}
+
+h1{
+    background-color: indigo;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+h2{
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.introduction > p{
+    padding: 10px 50px;
+}
+
+table{
+    text-align: center;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table tr th{
+    background-color: rebeccapurple;
+    padding: 5px;
+}
+
+table tr td{
+    background-color: lavender;
+    padding: 5px;
+}
+
+table, td, th {
+    border: 1.5px solid black;
+}
+
+.list{
+    background-color: rebeccapurple;
+    text-decoration: none;
+    color: white;
+}
+
+.list:hover{
+    background-color: lavender;
+    color: rebeccapurple;
+}
+
+fieldset{
+    background-color: lavender;
+    padding: 20px;
+    margin: 20px;
+    border: 1.5px solid black;
+}
+
+legend{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px;
+    border: 1.5px solid black;
+}
+
+fieldset > p, fieldset > ul > li{
+    background-color: lavender;
+}
+
+fieldset > ul{
+    padding-left: 30px;
+    background-color: lavender;
+}
+
+footer{
+    background-color: indigo;
+    padding: 20px;
+    text-align: center;
+}
+
+footer > p{
+    background-color: indigo;
+    color: white;
+    padding: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .introduction > p {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    table, td, th {
+        border-width: 1px;
+    }
+
+    legend {
+        font-size: 14px;
+    }
+
+    fieldset {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    footer > p {
+        font-size: 12px;
+    }
+}
